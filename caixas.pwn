@@ -154,11 +154,6 @@ public OnPlayerCommandText(playerid, cmdtext[])
 		}
 		else SendClientMessage(playerid, -1, "Erro: voce nao esta perto de um caixa");
 	}
-	else if(strcmp(cmdtext, "/salvarcaixas") == 0)
-	{
-		SetTimer("OnGameModeExit", 100, 0);
-		SendClientMessage(playerid, -1, "Info: Todos os caixas foram salvos");
-	}
 	else if(strcmp(cmdtext, "/atm") == 0)
 	{
 		if(ObterATM(playerid))
